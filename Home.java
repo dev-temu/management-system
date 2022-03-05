@@ -14,79 +14,20 @@ public class Home extends JFrame implements ActionListener{
 	}
         
         public Home() {
-            super("Library Management System");
+         
             setBounds(400, 150, 1000, 800);
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
 
-            
-            JMenuBar menuBar = new JMenuBar();
-            menuBar.add(Box.createRigidArea(new Dimension(400,100)));
-            menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(0, 128, 0), new Color(128, 128, 128)));
-            menuBar.setBackground(Color.white);
-            menuBar.setBounds(0, 10, 1000, 40);
-            contentPane.add(menuBar);
-
-            JMenu mnExit = new JMenu("Exit");
-            mnExit.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
-            
-            
-            JMenuItem mntmLogout = new JMenuItem("Logout");
-            mntmLogout.setBackground(Color.white);
-            mntmLogout.setForeground(Color.red);
-            mntmLogout.addActionListener(this);
-            mnExit.add(mntmLogout);
-            
-            JMenuItem mntmExit = new JMenuItem("Exit");
-            mntmExit.setForeground(Color.red);
-            mntmExit.setBackground(Color.white);
-            mntmExit.addActionListener(this);
-            mnExit.add(mntmExit);
-                
-            
-
-            JMenu mnHelp = new JMenu("Help");
-            mnHelp.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
-            
-
-            JMenuItem mntmReadme = new JMenuItem("Read Me");
-            mntmReadme.setBackground(Color.white);
-            mntmReadme.setForeground(Color.red);
-            mnHelp.add(mntmReadme);
-
-            JMenuItem mntmAboutUs = new JMenuItem("About Us");
-            mntmAboutUs.setForeground(Color.red);
-            mntmAboutUs.setBackground(Color.white);
-            mntmAboutUs.addActionListener(this);
-            mnHelp.add(mntmAboutUs);
-
-            JMenu mnRecord = new JMenu("Record");
-            mnRecord.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
-            
-
-            JMenuItem bookdetails = new JMenuItem("Book Details");
-            bookdetails.addActionListener(this);
-            bookdetails.setBackground(Color.white);
-            bookdetails.setForeground(Color.red);
-            mnRecord.add(bookdetails);
-
-            JMenuItem studentdetails = new JMenuItem("Student Details");
-            studentdetails.setBackground(Color.white);
-            studentdetails.setForeground(Color.red);
-            studentdetails.addActionListener(this);
-            mnRecord.add(studentdetails);
-            
-            menuBar.add(mnRecord);
-            menuBar.add(mnHelp);
-            menuBar.add(mnExit);
-
-            
-            JLabel l1 = new JLabel("Library Management System");
+            JLabel l1 = new JLabel("НОМЫН САНГИЙН СИСТЕМ");
             l1.setForeground(new Color(204, 51, 102));
             l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
             l1.setBounds(268, 30, 701, 80);
             contentPane.add(l1);
+
+            
+         
 
             JLabel l2 = new JLabel("");
             l2.setVerticalAlignment(SwingConstants.TOP);
@@ -113,35 +54,28 @@ public class Home extends JFrame implements ActionListener{
             l4.setBounds(530, 140, 225, 152);
             contentPane.add(l4);
 
-            b1 = new JButton("Add Books");
+            b1 = new JButton("НОМ НЭМЭХ");
             b1.addActionListener(this);
             b1.setBackground(Color.BLACK);
             b1.setForeground(Color.BLACK);
             b1.setBounds(60, 320, 159, 44);
             contentPane.add(b1);
 
-            b2 = new JButton("Statistics");
+            b2 = new JButton("НОМЫН ТӨЛӨВ");
             b2.addActionListener(this);
             b2.setBackground(Color.BLACK);
             b2.setForeground(Color.BLACK);
             b2.setBounds(313, 320, 139, 44);
             contentPane.add(b2);
 
-            b3 = new JButton("Add Student");
+            b3 = new JButton("ОЮУТАН НЭМЭХ");
             b3.addActionListener(this);
             b3.setBackground(Color.BLACK);
             b3.setForeground(Color.BLACK);
             b3.setBounds(562, 320, 167, 44);
             contentPane.add(b3);
 
-//            JPanel panel = new JPanel();
-//            panel.setBorder(new TitledBorder(new LineBorder(new Color(250, 128, 114), 2), "Operation", TitledBorder.LEADING,
-//				TitledBorder.TOP, null, new Color(220, 20, 60)));
-//            panel.setBounds(20, 120, 750, 260);
-//            panel.setBackground(Color.WHITE);
-//            contentPane.add(panel);
-
-            b4 = new JButton("Issue Book");
+            b4 = new JButton("НОМЫН ТӨЛӨВ");
             b4.addActionListener(this);
             b4.setBackground(Color.BLACK);
             b4.setForeground(Color.BLACK);
@@ -155,12 +89,6 @@ public class Home extends JFrame implements ActionListener{
             b5.setBounds(310, 620, 159, 41);
             contentPane.add(b5);
 
-//            b6 = new JButton("About Us");
-//            b6.addActionListener(this);
-//            b6.setBackground(Color.BLACK);
-//            b6.setForeground(Color.WHITE);
-//            b6.setBounds(562, 620, 159, 41);
-//            contentPane.add(b6);
 
             JLabel l5 = new JLabel("");
             ImageIcon i10  = new ImageIcon(ClassLoader.getSystemResource("icons/issue.png"));
@@ -178,21 +106,7 @@ public class Home extends JFrame implements ActionListener{
             l6.setBounds(332, 440, 139, 152);
             contentPane.add(l6);
 
-//            JLabel l7 = new JLabel("");
-//            ImageIcon i16  = new ImageIcon(ClassLoader.getSystemResource("icons/about.png"));
-//            Image i17 = i16.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
-//            ImageIcon i18 = new ImageIcon(i17);
-//            l7 = new JLabel(i18);
-//            l7.setBounds(562, 440, 157, 152);
-//            contentPane.add(l7);
 
-//            JPanel panel2 = new JPanel();
-//            panel2.setBorder(new TitledBorder(new LineBorder(new Color(205, 133, 63), 2), "Action", TitledBorder.LEADING,
-//				TitledBorder.TOP, null, new Color(233, 150, 122)));
-//            panel2.setBounds(20, 420, 750, 270);
-//            panel2.setBackground(Color.WHITE);
-//            contentPane.add(panel2);
-            
             getContentPane().setBackground(Color.WHITE);
             contentPane.setBackground(Color.WHITE);
 	}
@@ -200,25 +114,11 @@ public class Home extends JFrame implements ActionListener{
         
         public void actionPerformed(ActionEvent ae){
             String msg = ae.getActionCommand();
-            if(msg.equals("Logout")){
+            if(msg.equals("Гарах")){
                 setVisible(false);
-		new Login_user().setVisible(true);
-            }else if(msg.equals("Exit")){
-                System.exit(ABORT);
-            
-            }else if(msg.equals("Read Me")){
-            
-            }else if(msg.equals("About Us")){
-                setVisible(false);
-
-            
-            }else if(msg.equals("Book Details")){
-                setVisible(false);
-		new BookDetails().setVisible(true);
-            }else if(msg.equals("Student Details")){
-                setVisible(false);
-                new StudentDetails().setVisible(true);
-			
+	
+	            }else if(msg.equals("Оюутан мэдээлэл")){
+                setVisible(false);			
             }
             
             if(ae.getSource() == b1){
