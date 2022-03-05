@@ -24,43 +24,43 @@ public class IssueBook extends JFrame implements ActionListener{
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
 
-	JLabel l1 = new JLabel("Book_id");
+	JLabel l1 = new JLabel("Ном_id");
 	l1.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l1.setForeground(new Color(47, 79, 79));
 	l1.setBounds(47, 63, 100, 23);
 	contentPane.add(l1);
 
-	JLabel l2 = new JLabel("Name");
+	JLabel l2 = new JLabel("Нэр");
 	l2.setForeground(new Color(47, 79, 79));
 	l2.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l2.setBounds(47, 97, 100, 23);
 	contentPane.add(l2);
 
-	JLabel l3 = new JLabel("ISBN");
+	JLabel l3 = new JLabel("Баркод");
 	l3.setForeground(new Color(47, 79, 79));
 	l3.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l3.setBounds(47, 131, 100, 23);
 	contentPane.add(l3);
 
-	JLabel l4 = new JLabel("Publisher");
+	JLabel l4 = new JLabel("Зохиогч");
 	l4.setForeground(new Color(47, 79, 79));
 	l4.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l4.setBounds(47, 165, 100, 23);
 	contentPane.add(l4);
 
-	JLabel l5 = new JLabel("Edition");
+	JLabel l5 = new JLabel("Шинэчлэл");
 	l5.setForeground(new Color(47, 79, 79));
 	l5.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l5.setBounds(47, 199, 100, 23);
 	contentPane.add(l5);
 
-	JLabel l6 = new JLabel("Price");
+	JLabel l6 = new JLabel("Он");
 	l6.setForeground(new Color(47, 79, 79));
 	l6.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l6.setBounds(47, 233, 100, 23);
 	contentPane.add(l6);
 
-	JLabel l7 = new JLabel("Pages");
+	JLabel l7 = new JLabel("Хуудас");
 	l7.setForeground(new Color(47, 79, 79));
 	l7.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l7.setBounds(47, 267, 100, 23);
@@ -72,7 +72,7 @@ public class IssueBook extends JFrame implements ActionListener{
 	t1.setBounds(126, 66, 86, 20);
 	contentPane.add(t1);
 	
-	b1 = new JButton("Search");
+	b1 = new JButton("Хайх");
 	b1.addActionListener(this);
 	b1.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
         b1.setBackground(Color.BLACK);
@@ -131,50 +131,50 @@ public class IssueBook extends JFrame implements ActionListener{
 	contentPane.add(t7);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(47, 79, 79), 2, true), "Issue-Book",
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(47, 79, 79), 2, true), "Ном Түрээслэх",
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(34, 139, 34)));
 	panel.setFont(new Font("Tahoma", Font.BOLD, 14));
 	panel.setBounds(10, 38, 345, 288);
         panel.setBackground(Color.WHITE);
 	contentPane.add(panel);
 
-	JLabel l8 = new JLabel("Student_id");
+	JLabel l8 = new JLabel("Оюутан_id");
 	l8.setForeground(new Color(47, 79, 79));
 	l8.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l8.setBounds(384, 63, 100, 23);
 	contentPane.add(l8);
 
-	JLabel l9 = new JLabel("Name");
+	JLabel l9 = new JLabel("Нэр");
 	l9.setForeground(new Color(47, 79, 79));
 	l9.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l9.setBounds(384, 103, 100, 23);
 	contentPane.add(l9);
 
-	JLabel l10 = new JLabel("Father's Name");
+	JLabel l10 = new JLabel("Овог");
 	l10.setForeground(new Color(47, 79, 79));
 	l10.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l10.setBounds(384, 147, 100, 23);
 	contentPane.add(l10);
 
-	JLabel l11 = new JLabel("Course");
+	JLabel l11 = new JLabel("Курс");
 	l11.setForeground(new Color(47, 79, 79));
 	l11.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l11.setBounds(384, 187, 100, 23);
 	contentPane.add(l11);
 
-	JLabel l12 = new JLabel("Branch");
+	JLabel l12 = new JLabel("Салбар");
 	l12.setForeground(new Color(47, 79, 79));
 	l12.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l12.setBounds(384, 233, 100, 23);
 	contentPane.add(l12);
 
-	JLabel l13 = new JLabel("Year");
+	JLabel l13 = new JLabel("Курс");
 	l13.setForeground(new Color(47, 79, 79));
 	l13.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l13.setBounds(384, 284, 100, 23);
 	contentPane.add(l13);
 
-	JLabel l14 = new JLabel("Semester");
+	JLabel l14 = new JLabel("Улирал");
 	l14.setForeground(new Color(47, 79, 79));
 	l14.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l14.setBounds(384, 336, 100, 23);
@@ -245,21 +245,21 @@ public class IssueBook extends JFrame implements ActionListener{
 	contentPane.add(t14);
 
 	JPanel panel_1 = new JPanel();
-	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(70, 130, 180), 2, true), "Student-Deatails",
+	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(70, 130, 180), 2, true), "Оюутан мэдээлэл",
 			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(100, 149, 237)));
 	panel_1.setForeground(new Color(0, 100, 0));
 	panel_1.setBounds(360, 38, 378, 372);
         panel_1.setBackground(Color.WHITE);
 	contentPane.add(panel_1);
         
-	JLabel l15 = new JLabel(" Date of Issue :");
+	JLabel l15 = new JLabel("Түрээсэлсэн огноо");
 	l15.setForeground(new Color(105, 105, 105));
 	l15.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 	l15.setBounds(20, 340, 118, 26);
 	contentPane.add(l15);
 
 
-	b3 = new JButton("Issue");
+	b3 = new JButton("Түрээслэх");
 	b3.addActionListener(this);
 	b3.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b3.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
@@ -268,7 +268,7 @@ public class IssueBook extends JFrame implements ActionListener{
         b3.setForeground(Color.BLACK);
         contentPane.add(b3);
 
-	b4 = new JButton("Back");
+	b4 = new JButton("Буцах");
 	b4.addActionListener(this);
 	b4.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b4.setBorder(new LineBorder(new Color(192, 192, 192), 1, true));
@@ -282,36 +282,36 @@ public class IssueBook extends JFrame implements ActionListener{
         try{
             conn con = new conn();
             if(ae.getSource() == b1){
-                String sql = "select * from book where book_id = ?";
+                String sql = " ?";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, t1.getText());
 		ResultSet rs = st.executeQuery();
 		
                 while (rs.next()) {
-                    t2.setText(rs.getString("name"));
-                    t3.setText(rs.getString("isbn"));
-                    t4.setText(rs.getString("publisher"));
-                    t5.setText(rs.getString("edition"));
-                    t6.setText(rs.getString("price"));
-                    t7.setText(rs.getString("pages"));
+                    t2.setText(rs.getString(""));
+                    t3.setText(rs.getString(""));
+                    t4.setText(rs.getString(""));
+                    t5.setText(rs.getString(""));
+                    t6.setText(rs.getString(""));
+                    t7.setText(rs.getString(""));
 		}
 		st.close();
 		rs.close();
 		
             }
             if(ae.getSource() == b2){
-                String sql = "select * from student where student_id = ?";
+                String sql = "?";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, t8.getText());
 		ResultSet rs = st.executeQuery();
 		
                 while (rs.next()) {
-                    t9.setText(rs.getString("name"));
-                    t10.setText(rs.getString("father"));
-                    t11.setText(rs.getString("course"));
-                    t12.setText(rs.getString("branch"));
-                    t13.setText(rs.getString("year"));
-                    t14.setText(rs.getString("semester"));
+                    t9.setText(rs.getString(""));
+                    t10.setText(rs.getString(""));
+                    t11.setText(rs.getString(""));
+                    t12.setText(rs.getString(""));
+                    t13.setText(rs.getString(""));
+                    t14.setText(rs.getString(""));
 		}
 		st.close();
 		rs.close();
@@ -319,7 +319,7 @@ public class IssueBook extends JFrame implements ActionListener{
             }
             if(ae.getSource() == b3){
                     try{
-                String sql = "insert into issueBook(book_id, student_id, bname, sname, course, branch, dateOfIssue) values(?, ?, ?, ?, ?, ?, ?)";
+                String sql = "insert into issueBook(?, ?, ?, ?, ?, ?, ?) values(?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, t1.getText());
 		st.setString(2, t8.getText());
@@ -329,9 +329,9 @@ public class IssueBook extends JFrame implements ActionListener{
 		st.setString(6, t12.getText());
 		int i = st.executeUpdate();
 		if (i > 0)
-                    JOptionPane.showMessageDialog(null, "Successfully Book Issued..!");
+                    JOptionPane.showMessageDialog(null, "?");
 		else
-                    JOptionPane.showMessageDialog(null, "error");
+                    JOptionPane.showMessageDialog(null, "?");
                     }catch(Exception e){
                         e.printStackTrace();
                                 }
