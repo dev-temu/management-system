@@ -5,8 +5,8 @@ public class conn{
     Statement s;
     public conn(){  
         try{  
-            Class.forName("com.mysql.jdbc.Driver");  
-            c =DriverManager.getConnection("jdbc:mysql:///project2","root","");    
+            Class.forName("");  
+            c =DriverManager.getConnection("");    
             s =c.createStatement();  
         
             
@@ -18,6 +18,6 @@ public class conn{
     public static void main(String args[])
     {
         new conn();
-        System.out.println("Database Connected");
+        System.out.println("");
     }  
 }  
