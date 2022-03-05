@@ -19,7 +19,7 @@ public class Statistics extends JFrame{
     public void issueBook() {
 	try {
             conn con =  new conn();
-            String sql = "select * from issueBook";
+            String sql = "?";
             PreparedStatement st = con.c.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
 
@@ -33,7 +33,7 @@ public class Statistics extends JFrame{
     public void returnBook() {
         try {
             conn con = new conn();
-            String sql = "select * from returnBook";
+            String sql = "?";
             PreparedStatement st = con.c.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
 
@@ -61,14 +61,14 @@ public class Statistics extends JFrame{
 	scrollPane.setViewportView(table);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(47, 79, 79), 2, true), "Issue-Book-Details",
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(47, 79, 79), 2, true), "Түрээслэх номын мэдээлэл",
 				TitledBorder.LEADING, TitledBorder.TOP, null, new Color(0, 128, 128)));
 	panel.setForeground(new Color(0, 128, 128));
 	panel.setBounds(26, 36, 737, 240);
         panel.setBackground(Color.WHITE);
 	contentPane.add(panel);
 
-	JLabel l1 = new JLabel("Back");
+	JLabel l1 = new JLabel("Буцах");
 	l1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent arg0) {
@@ -97,7 +97,7 @@ public class Statistics extends JFrame{
 	scrollPane_1.setViewportView(table_1);
 
 	JPanel panel_1 = new JPanel();
-	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(0, 204, 153), 2, true), "Return-Book-Details",
+	panel_1.setBorder(new TitledBorder(new LineBorder(new Color(0, 204, 153), 2, true), "Түрээсэлсэн номын мэдээлэл",
 		TitledBorder.RIGHT, TitledBorder.TOP, null, new Color(0, 102, 51)));
 	panel_1.setBounds(22, 299, 741, 240);
         panel_1.setBackground(Color.WHITE);
