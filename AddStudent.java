@@ -31,37 +31,37 @@ public class AddStudent extends JFrame implements ActionListener{
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
 
-	JLabel l1 = new JLabel("Student_id");
+	JLabel l1 = new JLabel("Оюутан_id");
 	l1.setForeground(new Color(25, 25, 112));
 	l1.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l1.setBounds(64, 63, 102, 22);
 	contentPane.add(l1);
 
-	JLabel l2 = new JLabel("Name");
+	JLabel l2 = new JLabel("Нэр");
 	l2.setForeground(new Color(25, 25, 112));
 	l2.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l2.setBounds(64, 97, 102, 22);
 	contentPane.add(l2);
 
-	JLabel l3 = new JLabel("Father's Name");
+	JLabel l3 = new JLabel("Овог");
 	l3.setForeground(new Color(25, 25, 112));
 	l3.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l3.setBounds(64, 130, 102, 22);
 	contentPane.add(l3);
 
-	JLabel l4 = new JLabel("Branch");
+	JLabel l4 = new JLabel("Салбар");
 	l4.setForeground(new Color(25, 25, 112));
 	l4.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l4.setBounds(64, 209, 102, 22);
 	contentPane.add(l4);
 
-        JLabel l5 = new JLabel("Year");
+        JLabel l5 = new JLabel("Курс");
 	l5.setForeground(new Color(25, 25, 112));
 	l5.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l5.setBounds(64, 242, 102, 22);
 	contentPane.add(l5);
 
-	JLabel l6 = new JLabel("Semester");
+	JLabel l6 = new JLabel("Улирал");
 	l6.setForeground(new Color(25, 25, 112));
 	l6.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l6.setBounds(64, 275, 102, 22);
@@ -90,14 +90,14 @@ public class AddStudent extends JFrame implements ActionListener{
 	contentPane.add(t3);
 
 	comboBox = new JComboBox();
-	comboBox.setModel(new DefaultComboBoxModel(new String[] { "Mechanical", "CSE", "IT", "Civil", "Automobile", "EEE", "Other" }));
+	comboBox.setModel(new DefaultComboBoxModel(new String[] { "IT", "Electronic", "Math", "Other" }));
 	comboBox.setForeground(new Color(47, 79, 79));
 	comboBox.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	comboBox.setBounds(176, 211, 154, 20);
 	contentPane.add(comboBox);
 
 	comboBox_1 = new JComboBox();
-	comboBox_1.setModel(new DefaultComboBoxModel(new String[] { "First", "Second", "Third", "Four" }));
+	comboBox_1.setModel(new DefaultComboBoxModel(new String[] { "1st", "2ns", "3rd", "4th","Old" }));
 	comboBox_1.setForeground(new Color(47, 79, 79));
 	comboBox_1.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	comboBox_1.setBounds(176, 244, 154, 20);
@@ -105,29 +105,29 @@ public class AddStudent extends JFrame implements ActionListener{
 
 	comboBox_2 = new JComboBox();
 	comboBox_2.setModel(
-			new DefaultComboBoxModel(new String[] { "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th" }));
+			new DefaultComboBoxModel(new String[] { "Хавар", "Намар" }));
 	comboBox_2.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	comboBox_2.setForeground(new Color(47, 79, 79));
 	comboBox_2.setBounds(176, 277, 154, 20);
 	contentPane.add(comboBox_2);
 
-	b1 = new JButton("ADD");
+	b1 = new JButton("Нэмэх");
 	b1.addActionListener(this);
 	b1.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b1.setBounds(64, 321, 111, 33);
         b1.setBackground(Color.BLACK);
-        b1.setForeground(Color.WHITE);
+        b1.setForeground(Color.BLACK);
 	contentPane.add(b1);
 
-	b2 = new JButton("Back");
+	b2 = new JButton("Буцах");
 	b2.addActionListener(this);
 	b2.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	b2.setBounds(198, 321, 111, 33);
         b2.setBackground(Color.BLACK);
-        b2.setForeground(Color.WHITE);
+        b2.setForeground(Color.BLACK);
 	contentPane.add(b2);
 
-	JLabel l7 = new JLabel("Course");
+	JLabel l7 = new JLabel("Анги");
 	l7.setForeground(new Color(25, 25, 112));
 	l7.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l7.setBounds(64, 173, 102, 22);
@@ -135,14 +135,14 @@ public class AddStudent extends JFrame implements ActionListener{
 
 	comboBox_3 = new JComboBox();
 	comboBox_3.setModel(new DefaultComboBoxModel(
-			new String[] { "B.E", "B.Tech", "M.Tech", "MBA", "BBA", "BCA", "B.Sc", "M.Sc", "B.Com", "M.Com" }));
+			new String[] { "Developing", "Architecture", "Web", "Visual", "Project Management"}));
 	comboBox_3.setForeground(new Color(47, 79, 79));
 	comboBox_3.setFont(new Font("Trebuchet MS", Font.BOLD, 14));
 	comboBox_3.setBounds(176, 176, 154, 20);
 	contentPane.add(comboBox_3);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(102, 205, 170), 2, true), "Add-Student",
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(102, 205, 170), 2, true), "Оюутан нэмэх",
 			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(30, 144, 255)));
 	panel.setBackground(new Color(211, 211, 211));
 	panel.setBounds(10, 38, 358, 348);
@@ -160,7 +160,7 @@ public class AddStudent extends JFrame implements ActionListener{
             if(ae.getSource() == b1){
                 try{
                 conn con = new conn();
-                String sql = "insert into student(student_id, name, father, course, branch, year, semester) values(?, ?, ?, ?, ?, ?, ?)";
+                String sql = "insert into student(?, ?, ?, ?, ?, ?, ?) values(?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, t1.getText());
 		st.setString(2, t2.getText());
@@ -172,12 +172,12 @@ public class AddStudent extends JFrame implements ActionListener{
 
 		int i = st.executeUpdate();
 		if (i > 0){
-                    JOptionPane.showMessageDialog(null, "Successfully Added");
+                    JOptionPane.showMessageDialog(null, "Нэмсэн");
                     this.setVisible(false);
                     new Home().setVisible(true);
                 }
 		else
-                    JOptionPane.showMessageDialog(null, "error");
+                    JOptionPane.showMessageDialog(null, "Алдаа");
                 }catch(Exception e){
                     e.printStackTrace();
                 }
