@@ -30,43 +30,43 @@ public class AddBook extends JFrame implements ActionListener{
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
 
-	JLabel l1 = new JLabel("Name");
+	JLabel l1 = new JLabel("Нэр");
 	l1.setForeground(new Color(47, 79, 79));
 	l1.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l1.setBounds(73, 84, 90, 22);
 	contentPane.add(l1);
 
-	JLabel l2 = new JLabel("ISBN");
+	JLabel l2 = new JLabel("Баркод");
 	l2.setForeground(new Color(47, 79, 79));
 	l2.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l2.setBounds(73, 117, 90, 22);
 	contentPane.add(l2);
 
-	JLabel l3 = new JLabel("Publisher");
+	JLabel l3 = new JLabel("Зохиогч");
 	l3.setForeground(new Color(47, 79, 79));
 	l3.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l3.setBounds(73, 150, 90, 22);
 	contentPane.add(l3);
 
-	JLabel l4 = new JLabel("Price");
+	JLabel l4 = new JLabel("Хэвлэсэн он");
 	l4.setForeground(new Color(47, 79, 79));
 	l4.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l4.setBounds(73, 216, 90, 22);
 	contentPane.add(l4);
 
-	JLabel l5 = new JLabel("Pages");
+	JLabel l5 = new JLabel("Хуудас");
 	l5.setForeground(new Color(47, 79, 79));
 	l5.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l5.setBounds(73, 249, 90, 22);
 	contentPane.add(l5);
 
-	JLabel l6 = new JLabel("Book_id");
+	JLabel l6 = new JLabel("Ном_id");
 	l6.setForeground(new Color(47, 79, 79));
 	l6.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l6.setBounds(73, 51, 90, 22);
 	contentPane.add(l6);
 
-	JLabel l7 = new JLabel("Edition");
+	JLabel l7 = new JLabel("Шинэчлэл");
 	l7.setForeground(new Color(47, 79, 79));
 	l7.setFont(new Font("Tahoma", Font.BOLD, 14));
 	l7.setBounds(73, 183, 90, 22);
@@ -139,7 +139,7 @@ public class AddBook extends JFrame implements ActionListener{
 	contentPane.add(b2);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(138, 43, 226), 2), "Add Books", TitledBorder.LEADING,
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(138, 43, 226), 2), "Ном нэмэх", TitledBorder.LEADING,
 			TitledBorder.TOP, null, new Color(0, 0, 255)));
 	panel.setBounds(10, 29, 398, 344);
 	contentPane.add(panel);
@@ -154,9 +154,8 @@ public class AddBook extends JFrame implements ActionListener{
         try{
             conn con = new conn();
             if(ae.getSource() == b1){
-                String sql = "insert into book(book_id, name, isbn, publisher, edition, price, pages) values(?, ?, ?, ?, ?, ?, ?)";
+                String sql = "?";
 		PreparedStatement st = con.c.prepareStatement(sql);
-                // st.setInt(1, Integer.parseInt(textField.getText()));
 		st.setString(1, t1.getText());
 		st.setString(2, t2.getText());
 		st.setString(3, t3.getText());
@@ -167,9 +166,9 @@ public class AddBook extends JFrame implements ActionListener{
 
 		int rs = st.executeUpdate();
 		if (rs > 0)
-                    JOptionPane.showMessageDialog(null, "Successfully Added");
+                    JOptionPane.showMessageDialog(null, "Нэмсэн");
 		else
-                    JOptionPane.showMessageDialog(null, "Error");
+                    JOptionPane.showMessageDialog(null, "Алдаа");
                 t1.setText("");
                 t2.setText("");
                 t3.setText("");
