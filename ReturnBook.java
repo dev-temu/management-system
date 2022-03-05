@@ -26,7 +26,7 @@ public class ReturnBook extends JFrame implements ActionListener{
     public void delete() {
         try {
             conn con = new conn();
-            String sql = "delete from issueBook where book_id=?";
+            String sql = "?";
             PreparedStatement st = con.c.prepareStatement(sql);
             st.setString(1, textField.getText());
             int i = st.executeUpdate();
@@ -49,49 +49,49 @@ public class ReturnBook extends JFrame implements ActionListener{
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
 
-	JLabel lblNewLabel = new JLabel("Book_id");
+	JLabel lblNewLabel = new JLabel("Ном_id");
 	lblNewLabel.setForeground(new Color(0, 0, 0));
 	lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblNewLabel.setBounds(52, 52, 87, 24);
 	contentPane.add(lblNewLabel);
 
-	JLabel lblStudentid = new JLabel("Student_id");
+	JLabel lblStudentid = new JLabel("Оюутан_id");
 	lblStudentid.setForeground(Color.BLACK);
 	lblStudentid.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblStudentid.setBounds(243, 52, 87, 24);
 	contentPane.add(lblStudentid);
 
-	JLabel lblBook = new JLabel("Book");
+	JLabel lblBook = new JLabel("Ном");
 	lblBook.setForeground(Color.BLACK);
 	lblBook.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblBook.setBounds(52, 98, 71, 24);
 	contentPane.add(lblBook);
 
-	JLabel lblName = new JLabel("Name");
+	JLabel lblName = new JLabel("Нэр");
 	lblName.setForeground(Color.BLACK);
 	lblName.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblName.setBounds(300, 98, 71, 24);
 	contentPane.add(lblName);
 
-        JLabel lblCourse = new JLabel("Course");
+        JLabel lblCourse = new JLabel("Курс");
 	lblCourse.setForeground(Color.BLACK);
 	lblCourse.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblCourse.setBounds(52, 143, 87, 24);
 	contentPane.add(lblCourse);
 
-        JLabel lblBranch = new JLabel("Branch");
+        JLabel lblBranch = new JLabel("Салбар");
 	lblBranch.setForeground(Color.BLACK);
 	lblBranch.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblBranch.setBounds(303, 144, 68, 24);
 	contentPane.add(lblBranch);
 
-	JLabel lblDateOfIssue = new JLabel("Date of Issue");
+	JLabel lblDateOfIssue = new JLabel("Түрээсэлсэн огноо");
 	lblDateOfIssue.setForeground(Color.BLACK);
 	lblDateOfIssue.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblDateOfIssue.setBounds(52, 188, 105, 29);
 	contentPane.add(lblDateOfIssue);
 
-	JLabel lblDateOfReturn = new JLabel("Date of Return");
+	JLabel lblDateOfReturn = new JLabel("Буцаах огноо");
 	lblDateOfReturn.setForeground(Color.BLACK);
 	lblDateOfReturn.setFont(new Font("Tahoma", Font.BOLD, 14));
 	lblDateOfReturn.setBounds(52, 234, 118, 29);
@@ -111,7 +111,7 @@ public class ReturnBook extends JFrame implements ActionListener{
 	contentPane.add(textField_1);
 	textField_1.setColumns(10);
 
-	b1 = new JButton("Search");
+	b1 = new JButton("Хайх");
 	b1.addActionListener(this);
 	b1.setBounds(443, 52, 105, 29);
         b1.setBackground(Color.BLACK);
@@ -160,7 +160,7 @@ public class ReturnBook extends JFrame implements ActionListener{
 
 	
 
-	b2 = new JButton("Return");
+	b2 = new JButton("Ном буцаах");
 	b2.addActionListener(this);
 	b2.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 	b2.setBorder(new LineBorder(new Color(0, 0, 0), 0, true));
@@ -170,17 +170,17 @@ public class ReturnBook extends JFrame implements ActionListener{
 
 	contentPane.add(b2);
 
-	b3 = new JButton("Back");
+	b3 = new JButton("Буцах");
 	b3.addActionListener(this);
 	b3.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
 	b3.setBorder(new LineBorder(new Color(0, 0, 0), 0, true));
 	b3.setBounds(369, 231, 149, 30);
         b3.setBackground(Color.BLACK);
-        b3.setForeground(Color.WHITE);
+        b3.setForeground(Color.BLACK);
 	contentPane.add(b3);
 
 	JPanel panel = new JPanel();
-	panel.setBorder(new TitledBorder(new LineBorder(new Color(255, 69, 0), 2, true), "Return-Panel",
+	panel.setBorder(new TitledBorder(new LineBorder(new Color(255, 69, 0), 2, true), "Ном буцаах",
 			TitledBorder.LEADING, TitledBorder.TOP, null, new Color(220, 20, 60)));
 	panel.setBounds(10, 24, 569, 269);
         panel.setBackground(Color.WHITE);
@@ -191,25 +191,25 @@ public class ReturnBook extends JFrame implements ActionListener{
         try{
             conn con = new conn();
             if(ae.getSource() == b1){
-                String sql = "select * from issueBook where student_id = ? and book_id =?";
+                String sql = "?";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, textField_1.getText());
 		st.setString(2, textField.getText());
 		ResultSet rs = st.executeQuery();
 		
                 while (rs.next()) {
-                    textField_2.setText(rs.getString("bname"));
-                    textField_3.setText(rs.getString("sname"));
-                    textField_4.setText(rs.getString("course"));
-                    textField_5.setText(rs.getString("branch"));
-                    textField_6.setText(rs.getString("dateOfIssue"));
+                    textField_2.setText(rs.getString(""));
+                    textField_3.setText(rs.getString(""));
+                    textField_4.setText(rs.getString(""));
+                    textField_5.setText(rs.getString(""));
+                    textField_6.setText(rs.getString(""));
 		}
 		st.close();
 		rs.close();
 		
             }
             if(ae.getSource() == b2){
-                String sql = "insert into returnBook(book_id, student_id, bname, sname,course, branch, dateOfIssue, dateOfReturn) values(?, ?, ?, ?, ?, ?, ?, ?)";
+                String sql = "insert into returnBook(?, ?, ?, ?, ?, ?, ?, ?) values(?, ?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement st = con.c.prepareStatement(sql);
 		st.setString(1, textField.getText());
 		st.setString(2, textField_1.getText());
@@ -222,10 +222,10 @@ public class ReturnBook extends JFrame implements ActionListener{
 		
 		int i = st.executeUpdate();
 		if (i > 0) {
-                    JOptionPane.showMessageDialog(null, "Processing..");
+                    JOptionPane.showMessageDialog(null, "Амжилттай");
                     delete();
 		} else
-                    JOptionPane.showMessageDialog(null, "error");
+                    JOptionPane.showMessageDialog(null, "Алдаа");
 		
             }
             if(ae.getSource() == b3){
